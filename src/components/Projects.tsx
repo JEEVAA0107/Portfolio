@@ -5,48 +5,50 @@ import { Github, ExternalLink, Calendar } from "lucide-react";
 
 const Projects = memo(() => {
   const projects = [
+  {
+  title: "Food Products E-commerce Application",
+  description: "A food products platform built with React and TypeScript, using Supabase. Users can browse available products and submit inquiries to place orders.",
+  technologies: ["React", "TypeScript", "Supabase", "HTML", "CSS"],
+  features: [
+    "Display food products with images and details",
+    "Submit inquiries to place orders",
+    "Simple and responsive user interface",
+    "Order inquiry notifications",
+    "Responsive design for mobile and desktop"
+  ],
+  duration: "July 2025 - Sep 2025",
+  type: "Freelance Project"
+},
+
+   {
+  title: "Decision Making Algorithm",
+  description: "A project that implements decision-making algorithms to analyze multiple options and provide optimal solutions. Designed to support data-driven choices in various scenarios.",
+  technologies: ["Python", "NumPy", "Pandas", "Scikit-learn"],
+  features: [
+    "Evaluation of multiple decision options using algorithms",
+    "Data analysis and visualization of outcomes",
+    "Customizable decision criteria and weights",
+    "Supports scenario-based simulations",
+    "User-friendly interface for inputting data and viewing results"
+  ],
+  duration: "Mar 2023 - May 2023",
+  type: "Academic Project"
+  },
     {
-      title: "E-commerce Web Application",
-      description: "A full-stack e-commerce platform built with React, Node.js, and MongoDB. Features include user authentication, product catalog, shopping cart, and payment integration.",
-      technologies: ["React", "Node.js", "MongoDB", "Express", "Stripe API"],
-      features: [
-        "User registration and authentication",
-        "Product search and filtering",
-        "Shopping cart and checkout process",
-        "Order history and tracking",
-        "Admin dashboard for inventory management"
-      ],
-      duration: "Sep 2023 - Dec 2023",
-      type: "Final Year Project"
-    },
-    {
-      title: "Task Management System",
-      description: "A collaborative task management application with real-time updates, built using React and Firebase. Includes features for team collaboration and project tracking.",
-      technologies: ["React", "Firebase", "Material-UI", "Context API"],
-      features: [
-        "Real-time task updates and notifications",
-        "Team collaboration and user roles",
-        "Project timeline and progress tracking",
-        "File sharing and comments system",
-        "Responsive design for mobile and desktop"
-      ],
-      duration: "Jun 2023 - Aug 2023",
-      type: "Academic Project"
-    },
-    {
-      title: "Weather Forecast Application",
-      description: "A responsive weather application that provides current conditions and 7-day forecasts using OpenWeatherMap API. Features location-based weather and favorites system.",
-      technologies: ["JavaScript", "HTML/CSS", "OpenWeather API", "Local Storage"],
-      features: [
-        "Current weather conditions display",
-        "7-day weather forecast",
-        "Location-based weather detection",
-        "Search by city functionality",
-        "Favorite locations management"
-      ],
-      duration: "Mar 2023 - Apr 2023",
-      type: "Personal Project"
-    }
+  title: "AI Voice Assistant for Cars",
+  description: "An AI-powered voice assistant designed for cars to help drivers control navigation, entertainment, and vehicle functions hands-free, enhancing safety and convenience.",
+  technologies: ["Python", "Speech Recognition", "Text-to-Speech", "OpenAI API"],
+  features: [
+    "Voice-controlled navigation and route guidance",
+    "Hands-free music and media control",
+    "Real-time vehicle status updates",
+    "Personalized driver assistance and reminders",
+    "Supports natural language commands"
+  ],
+  duration: "Sep 2023 - Nov 2023",
+  type: "Personal Project"
+}
+
   ];
 
   return (
@@ -94,14 +96,18 @@ const Projects = memo(() => {
                     </div>
                     
                     <div className="flex gap-3">
-                      <Button variant="outline" size="sm" className="shadow-soft hover:shadow-card transition-smooth">
+                      {/* <Button variant="outline" size="sm" className="shadow-soft hover:shadow-card transition-smooth">
                         <Github className="mr-2 h-4 w-4" />
                         View Code
-                      </Button>
-                      <Button variant="outline" size="sm" className="shadow-soft hover:shadow-card transition-smooth">
-                        <ExternalLink className="mr-2 h-4 w-4" />
-                        Live Demo
-                      </Button>
+                      </Button> */}
+                      {index === 0 && (
+                        <a href="https://shreekalyanifoods.netlify.app/" target="_blank" rel="noopener noreferrer">
+                          <Button variant="outline" size="sm" className="shadow-soft hover:shadow-card transition-smooth">
+                            <ExternalLink className="mr-2 h-4 w-4" />
+                            Live Demo
+                          </Button>
+                        </a>
+                      )}
                     </div>
                   </div>
                   

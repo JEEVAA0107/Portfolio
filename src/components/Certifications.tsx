@@ -8,33 +8,32 @@ const Certifications = () => {
       title: "Programming In Java",
       issuer: "NPTEL",
       date: "JAN-APR 2024",
-      description: "Programming in Java is learning to write software using Java, focusing on core concepts like classes, objects, and methods to build platform-independent applications.",
+      description: "Completed a course in Programming in Java, covering core concepts, OOP, and application development.",
       skills: ["Core Java Concepts", "Object-Oriented Programming", "Methods & Functions", "Exception Handling"],
-      credentialId: "fcc-cert-js-2023-12"
     },
     {
       title: "Cloud Computing ",
       issuer: "NPTEL", 
       date: "JULY-OCT 2024",
-      description: "Cloud Computing is the delivery of computing services servers, storage, databases, networking, and software over the internet, allowing on-demand access, scalability, and cost-efficient management of resources.",
+      description: "Completed a course in Cloud Computing, covering cloud services, deployment models, and practical applications.",
       skills: ["Cloud Platforms", "Virtualization & Storage", "Networking & Security", "Cloud Services"],
-      credentialId: "fcc-cert-rwd-2023-10"
+  
     },
     {
-      title: "React - The Complete Guide",
-      issuer: "Udemy",
-      date: "August 2023",
-      description: "Comprehensive React course covering components, state management, hooks, routing, and modern React development patterns.",
-      skills: ["React.js", "Hooks", "State Management", "Redux"],
-      credentialId: "udemy-react-2023"
-    },
-    {
-      title: "Introduction to Cloud Computing",
+      title: "Generative Ai",
       issuer: "IBM via Coursera",
-      date: "June 2023",
-      description: "Foundation course covering cloud computing concepts, service models, deployment models, and major cloud platforms.",
-      skills: ["Cloud Computing", "AWS", "Azure", "Cloud Architecture"],
-      credentialId: "coursera-ibm-cloud-2023"
+      date: "july 2025",
+      description: "Completed a course on Generative AI, covering the fundamentals, real-world applications, and hands-on practices for building AI-driven solutions",
+      skills: ["Fundamentals of Generative AI", "NLP", "Text, image, and code generation", "LLMs"],
+
+    },
+    {
+      title: "Full Stack Web Development with Java",
+      issuer: "ETS Academy",
+      date: "September 2024",
+      description: "Completed Full Stack Development in Java with front-end, back-end, and database skills.",
+      skills: ["Html", "Css", "JavaScript", "Sql","JDBC","Java"],
+ 
     }
   ];
 
@@ -89,17 +88,7 @@ const Certifications = () => {
                     </div>
                   </div>
                   
-                  <div className="pt-4 border-t border-border">
-                    <div className="flex justify-between items-center">
-                      <span className="text-sm text-muted-foreground">
-                        ID: {cert.credentialId}
-                      </span>
-                      <Button variant="outline" size="sm" className="shadow-soft hover:shadow-card transition-smooth">
-                        <ExternalLink className="mr-2 h-3 w-3" />
-                        Verify
-                      </Button>
-                    </div>
-                  </div>
+
                 </div>
               </div>
             </Card>
