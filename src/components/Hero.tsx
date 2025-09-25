@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Download, Mail, Linkedin, Github } from "lucide-react";
+import passportImage from "/passportsize.jpg";
+import resumePdf from "/resume.pdf";
 
 const Hero = () => {
   return (
@@ -12,7 +14,7 @@ const Hero = () => {
           <div className="w-56 h-56 mx-auto mb-6 rounded-full gradient-card shadow-medium flex items-center justify-center overflow-hidden">
             {/* Passport-size profile pic */}
             <img
-              src="/passportsize.jpg"
+              src={passportImage}
               alt="Jeevaa M M"
               className="w-full h-full object-cover object-top"
               loading="eager"
@@ -35,7 +37,7 @@ const Hero = () => {
         </div>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <a href="/resume.pdf" download>
+          <a href={resumePdf} download>
             <Button
               size="lg"
               className="gradient-primary hover:shadow-medium transition-smooth"
