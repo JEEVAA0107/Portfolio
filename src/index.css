@@ -184,14 +184,22 @@ html {
   
   /* Additional responsive utilities */
   .text-responsive {
-    @apply text-sm sm:text-base;
+    @apply text-xs xs:text-sm sm:text-base;
   }
   
   .heading-responsive {
-    @apply text-2xl sm:text-3xl md:text-4xl;
+    @apply text-lg xs:text-xl sm:text-2xl md:text-3xl lg:text-4xl;
   }
   
   .container-responsive {
-    @apply px-4 sm:px-6 lg:px-8;
+    @apply px-3 xs:px-4 sm:px-6 lg:px-8;
+  }
+  
+  .card-responsive {
+    @apply p-3 xs:p-4 sm:p-6 lg:p-8;
+  }
+  
+  .gap-responsive {
+    @apply gap-2 xs:gap-3 sm:gap-4 lg:gap-6;
   }
 }

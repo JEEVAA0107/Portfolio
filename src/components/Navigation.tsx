@@ -25,18 +25,18 @@ const Navigation = memo(() => {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-card/95 backdrop-blur-sm border-b shadow-soft">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-14 sm:h-16">
           {/* Profile Section */}
-          <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 rounded-full gradient-card shadow-medium flex items-center justify-center">
-              <div className="w-8 h-8 rounded-full bg-muted flex items-center justify-center text-sm font-semibold text-primary">
+          <div className="flex items-center space-x-2 sm:space-x-3">
+            <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full gradient-card shadow-medium flex items-center justify-center">
+              <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-muted flex items-center justify-center text-xs sm:text-sm font-semibold text-primary">
                 JM
               </div>
             </div>
-            <div className="hidden sm:block">
-              <h2 className="text-lg font-semibold text-foreground">JEEVAA M M</h2>
-              <p className="text-xs text-muted-foreground">Software Engineer</p>
+            <div className="hidden xs:block sm:block">
+              <h2 className="text-sm sm:text-lg font-semibold text-foreground">JEEVAA M M</h2>
+              <p className="text-xs text-muted-foreground hidden sm:block">Software Engineer</p>
             </div>
           </div>
 
@@ -63,9 +63,9 @@ const Navigation = memo(() => {
               variant="ghost"
               size="sm"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-muted-foreground hover:text-foreground"
+              className="text-muted-foreground hover:text-foreground p-1 sm:p-2"
             >
-              {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              {isMenuOpen ? <X className="h-5 w-5 sm:h-6 sm:w-6" /> : <Menu className="h-5 w-5 sm:h-6 sm:w-6" />}
             </Button>
           </div>
         </div>

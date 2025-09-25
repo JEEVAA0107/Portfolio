@@ -52,35 +52,35 @@ const Projects = memo(() => {
   ];
 
   return (
-    <section id="projects" className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
+    <section id="projects" className="py-8 sm:py-12 lg:py-20 px-3 sm:px-6 lg:px-8 bg-muted/30">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4">Academic Projects</h2>
-          <div className="w-24 h-1 bg-primary mx-auto rounded-full"></div>
-          <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
+        <div className="text-center mb-8 sm:mb-12 lg:mb-16">
+          <h2 className="text-xl xs:text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-3 sm:mb-4">Academic Projects</h2>
+          <div className="w-16 sm:w-20 lg:w-24 h-1 bg-primary mx-auto rounded-full"></div>
+          <p className="text-muted-foreground mt-3 sm:mt-4 max-w-xs xs:max-w-sm sm:max-w-lg lg:max-w-2xl mx-auto text-sm sm:text-base px-2">
             Showcasing practical applications of my technical skills through various development projects
           </p>
         </div>
 
-        <div className="space-y-8">
+        <div className="space-y-6 sm:space-y-8 px-2 sm:px-0">
           {projects.map((project, index) => (
             <Card key={index} className="gradient-card border-0 shadow-card hover:shadow-medium transition-smooth">
-              <div className="p-4 sm:p-6 lg:p-8">
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
+              <div className="p-3 xs:p-4 sm:p-6 lg:p-8">
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
                   <div className="lg:col-span-2">
-                    <div className="flex flex-col sm:flex-row sm:items-center gap-4 mb-4">
-                      <h3 className="text-2xl font-semibold text-foreground">{project.title}</h3>
-                      <span className="inline-block bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium">
+                    <div className="flex flex-col gap-3 xs:gap-4 mb-4">
+                      <h3 className="text-lg xs:text-xl sm:text-2xl font-semibold text-foreground leading-tight">{project.title}</h3>
+                      <span className="inline-block bg-primary/10 text-primary px-2 xs:px-3 py-1 rounded-full text-xs xs:text-sm font-medium">
                         {project.type}
                       </span>
                     </div>
                     
-                    <div className="flex items-center gap-2 text-muted-foreground mb-4">
-                      <Calendar className="h-4 w-4" />
-                      <span>{project.duration}</span>
+                    <div className="flex items-center gap-2 text-muted-foreground mb-3 xs:mb-4">
+                      <Calendar className="h-3 w-3 xs:h-4 xs:w-4" />
+                      <span className="text-xs xs:text-sm">{project.duration}</span>
                     </div>
                     
-                    <p className="text-muted-foreground leading-relaxed mb-6">
+                    <p className="text-muted-foreground leading-relaxed mb-4 xs:mb-5 sm:mb-6 text-sm xs:text-base">
                       {project.description}
                     </p>
                     
