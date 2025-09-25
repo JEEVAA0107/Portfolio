@@ -11,8 +11,8 @@ const Education = () => {
       grade: "CGPA: 8.5/10",
       highlights: [
         "Specialized in Software Development and Data Structures",
-        "Final Year Project: E-commerce Web Application",
-        "Active member of Coding Club and Tech Society"
+        "i have completed various projects using Java, Python, and web technologies",
+        "participated in coding competitions and hackathons to enhance problem-solving skills"
       ]
     },
     {
@@ -22,9 +22,9 @@ const Education = () => {
       duration: "2020 - 2022",
       grade: "Percentage: 70%",
       highlights: [
-        "Mathematics, Physics, Chemistry, Computer Science",
-        "School topper in Computer Science",
-        "Participated in National Science Olympiad"
+        "Mathematics, Physics, Chemistry, Biology",
+        "I Have participated in various inter-school competitions",
+        "I have actively participated in extracurricular activities"
       ]
     }
   ];
