@@ -26,14 +26,14 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 px-4">
+    <section id="about" className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-foreground mb-4">About Me</h2>
           <div className="w-24 h-1 bg-primary mx-auto rounded-full"></div>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
+        <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center mb-12 lg:mb-16">
           <div>
             <h3 className="text-2xl font-semibold text-foreground mb-6">Career Objective</h3>
             <p className="text-muted-foreground leading-relaxed text-lg">
@@ -67,7 +67,7 @@ const About = () => {
 
         <div>
           <h3 className="text-2xl font-semibold text-foreground text-center mb-8">Personal Strengths</h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             {strengths.map((strength, index) => (
               <Card key={index} className="p-6 shadow-card hover:shadow-medium transition-smooth gradient-card border-0">
                 <div className="flex flex-col items-center text-center">

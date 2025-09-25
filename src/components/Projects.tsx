@@ -52,7 +52,7 @@ const Projects = memo(() => {
   ];
 
   return (
-    <section id="projects" className="py-20 px-4 bg-muted/30">
+    <section id="projects" className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-foreground mb-4">Academic Projects</h2>
@@ -65,8 +65,8 @@ const Projects = memo(() => {
         <div className="space-y-8">
           {projects.map((project, index) => (
             <Card key={index} className="gradient-card border-0 shadow-card hover:shadow-medium transition-smooth">
-              <div className="p-8">
-                <div className="grid lg:grid-cols-3 gap-8">
+              <div className="p-4 sm:p-6 lg:p-8">
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
                   <div className="lg:col-span-2">
                     <div className="flex flex-col sm:flex-row sm:items-center gap-4 mb-4">
                       <h3 className="text-2xl font-semibold text-foreground">{project.title}</h3>
@@ -95,7 +95,7 @@ const Projects = memo(() => {
                       ))}
                     </div>
                     
-                    <div className="flex gap-3">
+                    <div className="flex flex-wrap gap-2 sm:gap-3">
                       {/* <Button variant="outline" size="sm" className="shadow-soft hover:shadow-card transition-smooth">
                         <Github className="mr-2 h-4 w-4" />
                         View Code

@@ -52,7 +52,7 @@ const Skills = memo(() => {
   ];
 
   return (
-    <section id="skills" className="py-20 px-4">
+    <section id="skills" className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-foreground mb-4">Technical Skills</h2>
@@ -62,10 +62,10 @@ const Skills = memo(() => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
           {skillCategories.map((category, index) => (
             <Card key={index} className="gradient-card border-0 shadow-card hover:shadow-medium transition-smooth">
-              <div className="p-8">
+              <div className="p-6 sm:p-8">
                 <div className="flex items-center gap-3 mb-6">
                   <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
                     {category.icon}

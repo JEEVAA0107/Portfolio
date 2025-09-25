@@ -181,4 +181,17 @@ html {
   .transition-fast {
     transition: var(--transition-fast);
   }
+  
+  /* Additional responsive utilities */
+  .text-responsive {
+    @apply text-sm sm:text-base;
+  }
+  
+  .heading-responsive {
+    @apply text-2xl sm:text-3xl md:text-4xl;
+  }
+  
+  .container-responsive {
+    @apply px-4 sm:px-6 lg:px-8;
+  }
 }

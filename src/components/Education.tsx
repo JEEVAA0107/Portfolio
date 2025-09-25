@@ -30,7 +30,7 @@ const Education = () => {
   ];
 
   return (
-    <section id="education" className="py-20 px-4 bg-muted/30">
+    <section id="education" className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-foreground mb-4">Education</h2>
@@ -40,8 +40,8 @@ const Education = () => {
         <div className="space-y-8">
           {education.map((edu, index) => (
             <Card key={index} className="gradient-card border-0 shadow-card hover:shadow-medium transition-smooth">
-              <div className="p-8">
-                <div className="flex flex-col lg:flex-row lg:items-center gap-6">
+              <div className="p-4 sm:p-6 lg:p-8">
+                <div className="flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-6">
                   <div className="flex-shrink-0">
                     <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
                       <GraduationCap className="h-8 w-8 text-primary" />

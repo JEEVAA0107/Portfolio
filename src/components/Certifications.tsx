@@ -38,7 +38,7 @@ const Certifications = () => {
   ];
 
   return (
-    <section id="certifications" className="py-20 px-4">
+    <section id="certifications" className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-foreground mb-4">Certifications</h2>
@@ -48,10 +48,10 @@ const Certifications = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
           {certifications.map((cert, index) => (
             <Card key={index} className="gradient-card border-0 shadow-card hover:shadow-medium transition-smooth h-full">
-              <div className="p-8 flex flex-col h-full">
+              <div className="p-4 sm:p-6 lg:p-8 flex flex-col h-full">
                 <div className="flex items-start gap-4 mb-4">
                   <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
                     <Award className="h-6 w-6 text-primary" />

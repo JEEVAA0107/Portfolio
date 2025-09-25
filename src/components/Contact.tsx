@@ -35,7 +35,7 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 px-4 bg-muted/30">
+    <section id="contact" className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-foreground mb-4">Get In Touch</h2>
@@ -46,13 +46,13 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
           <div>
             <h3 className="text-2xl font-semibold text-foreground mb-8">Contact Information</h3>
             <div className="space-y-6">
               {contactInfo.map((contact, index) => (
                 <Card key={index} className="gradient-card border-0 shadow-card hover:shadow-medium transition-smooth">
-                  <div className="p-6">
+                  <div className="p-4 sm:p-6">
                     <div className="flex items-start gap-4">
                       <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary flex-shrink-0">
                         {contact.icon}
@@ -83,7 +83,7 @@ const Contact = () => {
 
           <div>
             <Card className="gradient-card border-0 shadow-card">
-              <div className="p-8">
+              <div className="p-6 sm:p-8">
                 <h3 className="text-2xl font-semibold text-foreground mb-6">Let's Connect</h3>
                 
                 <div className="space-y-6">
