@@ -13,7 +13,6 @@ const Hero = () => {
             {/* Passport-size profile pic */}
             <img
               src="/src/assets/passportsize.jpg"
-              alt="Jeevaa M M"
               className="w-full h-full object-cover object-top"
               loading="eager"
               width="224"
