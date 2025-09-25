@@ -12,7 +12,8 @@ const Hero = () => {
           <div className="w-56 h-56 mx-auto mb-6 rounded-full gradient-card shadow-medium flex items-center justify-center overflow-hidden">
             {/* Passport-size profile pic */}
             <img
-              src="/src/assets/passportsize.jpg"
+              src="/passportsize.jpg"
+              alt="Jeevaa M M"
               className="w-full h-full object-cover object-top"
               loading="eager"
               width="224"
@@ -34,7 +35,7 @@ const Hero = () => {
         </div>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <a href="/src/assets/resume.pdf" download>
+          <a href="/resume.pdf" download>
             <Button
               size="lg"
               className="gradient-primary hover:shadow-medium transition-smooth"
