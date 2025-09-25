@@ -34,8 +34,8 @@ const Navigation = memo(() => {
                 JM
               </div>
             </div>
-            <div className="hidden xs:block sm:block">
-              <h2 className="text-sm sm:text-lg font-semibold text-foreground">JEEVAA M M</h2>
+            <div className="block">
+              <h2 className="text-xs xs:text-sm sm:text-lg font-semibold text-foreground">JEEVAA M M</h2>
               <p className="text-xs text-muted-foreground hidden sm:block">Software Engineer</p>
             </div>
           </div>
