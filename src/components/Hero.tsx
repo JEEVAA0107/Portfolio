@@ -7,11 +7,11 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center gradient-subtle px-3 sm:px-6 lg:px-8 pt-16 pb-8"
+      className="min-h-[80vh] sm:min-h-[85vh] lg:min-h-screen flex items-center justify-center gradient-subtle px-3 sm:px-6 lg:px-8 pt-16 pb-4"
     >
       <div className="max-w-4xl mx-auto text-center w-full">
-        <div className="mb-6 sm:mb-8 lg:mb-12">
-          <div className="w-32 h-32 xs:w-36 xs:h-36 sm:w-44 sm:h-44 md:w-52 md:h-52 lg:w-56 lg:h-56 mx-auto mb-4 sm:mb-6 lg:mb-8 rounded-full gradient-card shadow-medium flex items-center justify-center overflow-hidden">
+        <div className="mb-4 sm:mb-6 lg:mb-8">
+          <div className="w-28 h-28 xs:w-32 xs:h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 mx-auto mb-3 sm:mb-4 lg:mb-6 rounded-full gradient-card shadow-medium flex items-center justify-center overflow-hidden">
             <img
               src={passportImage}
               alt="Jeevaa M M"
@@ -22,13 +22,13 @@ const Hero = () => {
               decoding="async"
             />
           </div>
-          <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-foreground mb-3 sm:mb-4 tracking-tight px-1 sm:px-2">
+          <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-2 sm:mb-3 tracking-tight px-1 sm:px-2">
             JEEVAA M M
           </h1>
-          <p className="text-base xs:text-lg sm:text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-3 sm:mb-4 lg:mb-6 font-medium">
+          <p className="text-base xs:text-lg sm:text-xl md:text-2xl text-muted-foreground mb-2 sm:mb-3 lg:mb-4 font-medium">
             Software Engineer
           </p>
-          <p className="text-sm xs:text-base sm:text-lg lg:text-xl text-muted-foreground max-w-xs xs:max-w-sm sm:max-w-lg md:max-w-2xl lg:max-w-3xl mx-auto leading-relaxed px-2 sm:px-4">
+          <p className="text-sm xs:text-base sm:text-lg text-muted-foreground max-w-xs xs:max-w-sm sm:max-w-lg md:max-w-2xl mx-auto leading-relaxed px-2 sm:px-4">
             A passionate and dedicated fresher software engineer with a strong
             foundation in modern web technologies and a keen interest in
             building innovative digital solutions.
