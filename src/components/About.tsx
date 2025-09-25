@@ -49,23 +49,23 @@ const About = memo(() => {
 
           {/* Quick Facts - Mobile Optimized */}
           <div className="gradient-card rounded-xl sm:rounded-2xl p-4 sm:p-6 lg:p-8 shadow-card mx-2 sm:mx-0">
-            <h3 className="text-base sm:text-lg lg:text-xl font-semibold text-foreground mb-4 text-center sm:text-left">Quick Facts</h3>
+            <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-foreground mb-4 text-center sm:text-left">Quick Facts</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
               <div className="space-y-1">
-                <span className="text-muted-foreground text-xs sm:text-sm block">Education</span>
-                <span className="font-medium text-xs sm:text-sm lg:text-base block">B.Tech in AI & Data Science</span>
+                <span className="text-muted-foreground text-sm sm:text-base lg:text-lg block">Education</span>
+                <span className="font-medium text-sm sm:text-base lg:text-lg block">B.Tech in AI & Data Science</span>
               </div>
               <div className="space-y-1">
-                <span className="text-muted-foreground text-xs sm:text-sm block">Experience</span>
-                <span className="font-medium text-xs sm:text-sm lg:text-base block">Fresher</span>
+                <span className="text-muted-foreground text-sm sm:text-base lg:text-lg block">Experience</span>
+                <span className="font-medium text-sm sm:text-base lg:text-lg block">Fresher</span>
               </div>
               <div className="space-y-1">
-                <span className="text-muted-foreground text-xs sm:text-sm block">Location</span>
-                <span className="font-medium text-xs sm:text-sm lg:text-base block">Available to relocate</span>
+                <span className="text-muted-foreground text-sm sm:text-base lg:text-lg block">Location</span>
+                <span className="font-medium text-sm sm:text-base lg:text-lg block">Available to relocate</span>
               </div>
               <div className="space-y-1">
-                <span className="text-muted-foreground text-xs sm:text-sm block">Availability</span>
-                <span className="font-medium text-xs sm:text-sm lg:text-base block">Immediate</span>
+                <span className="text-muted-foreground text-sm sm:text-base lg:text-lg block">Availability</span>
+                <span className="font-medium text-sm sm:text-base lg:text-lg block">Immediate</span>
               </div>
             </div>
           </div>
@@ -80,8 +80,8 @@ const About = memo(() => {
                     <div className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-2 sm:mb-3 lg:mb-4 text-primary">
                       {strength.icon}
                     </div>
-                    <h4 className="text-xs sm:text-sm lg:text-base font-semibold text-foreground mb-1 sm:mb-2 leading-tight">{strength.title}</h4>
-                    <p className="text-muted-foreground text-xs sm:text-xs lg:text-sm leading-tight">{strength.description}</p>
+                    <h4 className="text-sm sm:text-base lg:text-lg font-semibold text-foreground mb-1 sm:mb-2 leading-tight">{strength.title}</h4>
+                    <p className="text-muted-foreground text-xs sm:text-sm lg:text-base leading-tight">{strength.description}</p>
                   </div>
                 </Card>
               ))}
