@@ -30,7 +30,7 @@ const About = memo(() => {
   ];
 
   return (
-    <section ref={ref} id="about" className={`py-6 sm:py-12 lg:py-20 px-3 sm:px-6 lg:px-8 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+    <section ref={ref} id="about" className="py-6 sm:py-12 lg:py-20 px-3 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-6 sm:mb-10 lg:mb-16">
