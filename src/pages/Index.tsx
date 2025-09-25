@@ -1,6 +1,9 @@
 import { lazy, Suspense } from "react";
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
+import ScrollProgress from "@/components/ScrollProgress";
+import BackToTop from "@/components/BackToTop";
+import SEO from "@/components/SEO";
 
 // Lazy load components for better performance
 const About = lazy(() => import("@/components/About"));
@@ -19,6 +22,8 @@ const LoadingSpinner = () => (
 const Index = () => {
   return (
     <div className="min-h-screen">
+      <SEO />
+      <ScrollProgress />
       <Navigation />
       <Hero />
       <Suspense fallback={<LoadingSpinner />}>
@@ -39,6 +44,7 @@ const Index = () => {
       <Suspense fallback={<LoadingSpinner />}>
         <Contact />
       </Suspense>
+      <BackToTop />
     </div>
   );
 };
