@@ -52,7 +52,7 @@ const Projects = memo(() => {
   ];
 
   return (
-    <section id="projects" className="py-8 sm:py-12 lg:py-20 px-3 sm:px-6 lg:px-8 bg-muted/30">
+    <section id="projects" className="py-6 sm:py-12 lg:py-20 px-3 sm:px-6 lg:px-8 bg-muted/30">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-8 sm:mb-12 lg:mb-16">
           <h2 className="text-xl xs:text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-3 sm:mb-4">Academic Projects</h2>
